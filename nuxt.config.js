@@ -50,7 +50,7 @@ export default {
   },
   publicRuntimeConfig: {
     http: {
-      browserBaseURL: process.env.BROWSER_BASE_URL,
+      browserBaseURL: process.env.BASE_URL || 'http://localhost:3000',
     },
   },
 
