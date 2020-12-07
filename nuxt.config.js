@@ -45,7 +45,20 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/svg',
   ],
+  http: {
+    baseURL: process.env.BASE_URL || 'http://localhost:3000',
+  },
+  publicRuntimeConfig: {
+    http: {
+      browserBaseURL: process.env.BROWSER_BASE_URL,
+    },
+  },
 
+  privateRuntimeConfig: {
+    http: {
+      baseURL: process.env.BASE_URL,
+    },
+  },
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
     fallback: 'dark', // fallback value if not system preference found
