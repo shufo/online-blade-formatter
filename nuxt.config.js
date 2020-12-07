@@ -44,7 +44,9 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/svg',
   ],
-
+  axios: {
+    baseURL: process.env.NODE_ENV === 'prod' ? '/' : 'http://localhost:3000', // Used as fallback if no runtime config is provided
+  },
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
     fallback: 'dark', // fallback value if not system preference found
