@@ -152,17 +152,19 @@ export default {
       return
     }
 
-    const res = await this.$axios.$post('/v1/format', {
+    const res = await this.$http.post('/v1/format', {
       content: this.content,
     })
 
-    if (res.error) {
+    const body = await res.json()
+
+    if (body.error) {
       const ansi = new AnsiUp()
-      return (this.error = ansi.ansi_to_html(res.error))
+      return (this.error = ansi.ansi_to_html(body.error))
     }
 
     this.error = ''
-    this.formatted = res.formatted
+    this.formatted = body.formatted
   },
   methods: {
     refresh() {

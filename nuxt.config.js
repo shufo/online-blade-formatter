@@ -41,6 +41,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxt/http',
     '@nuxtjs/axios',
     '@nuxtjs/svg',
   ],
