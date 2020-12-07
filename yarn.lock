@@ -1717,14 +1717,14 @@
     mustache "^2.3.0"
     stack-trace "0.0.10"
 
-"@prettier/plugin-php@^0.14.0":
-  version "0.14.3"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.14.3.tgz#91e8595026f2d25d7f1c6141658b3bf94947cb7e"
-  integrity sha512-n+r5e4p8QhF497NUyOx7AqyQjNqCNbwhd+W8wTc07dO9ME42npIwZ1N8Hyc3kZ4KeLxE+nAuU5e21VMcbJyOMQ==
+"@prettier/plugin-php@^0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.16.0.tgz#db6d0b363bf8326eb2175f151b6fed35cda6354d"
+  integrity sha512-HG/FamMUtq4/9hZmeuvwy0BWmOr4m9OWacvLSUmmgUrQd4+TRZW7Nqs2MAJkwSNiBIgAKTt2Vw9PK+33Gxxx8g==
   dependencies:
     linguist-languages "^7.5.1"
-    mem "^6.0.1"
-    php-parser glayzzle/php-parser#5a0e2e1bf12517bd1c544c0f4e68482d0362a7b5
+    mem "^8.0.0"
+    php-parser "3.0.2"
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.1"
@@ -3141,12 +3141,12 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-blade-formatter@^1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.9.1.tgz#559b53e047f18a90dd2becf6ab8dad8ba6773779"
-  integrity sha512-mSICP9ZHJW9lawJHWUrrvvQgCqXUmI4h80NbuII5BY6GksDY8WxGLIeOdSPcwvWeiCTida+SFtJY5MgcjpWy2w==
+blade-formatter@^1.9.3:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.9.3.tgz#dc06f2014048497b3d7dc9832029f8001df15c0b"
+  integrity sha512-w3Mqiaq9AA8sNIRW6WQ73M1ZC5l9FRtT6uGqFEJPtEfoBjhZXOK3tJC6ZZ6cbGJaG8NdePqyhkmATcXltdPE3w==
   dependencies:
-    "@prettier/plugin-php" "^0.14.0"
+    "@prettier/plugin-php" "^0.16.0"
     chalk "^4.1.0"
     concat-stream "^2.0.0"
     detect-indent "^6.0.0"
@@ -3155,7 +3155,7 @@ blade-formatter@^1.9.1:
     js-beautify "^1.10.2"
     lodash "^4.17.19"
     php-parser "^3.0.0-prerelease.9"
-    prettier "^2.0.5"
+    prettier "^2.2.0"
     vscode-oniguruma "^1.3.1"
     vscode-textmate "^4.2.2"
     yargs "^15.3.0"
@@ -8104,6 +8104,14 @@ mem@^6.0.1:
     map-age-cleaner "^0.1.3"
     mimic-fn "^3.0.0"
 
+mem@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/mem/-/mem-8.0.0.tgz#b5e4b6d2d241c6296da05436173b4d0c7ae1f9ac"
+  integrity sha512-qrcJOe6uD+EW8Wrci1Vdiua/15Xw3n/QnaNXE7varnB6InxSk7nu3/i5jfy3S6kWxr8WYJ6R1o0afMUtvorTsA==
+  dependencies:
+    map-age-cleaner "^0.1.3"
+    mimic-fn "^3.1.0"
+
 memfs@^3.1.2:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/memfs/-/memfs-3.2.0.tgz#f9438e622b5acd1daa8a4ae160c496fdd1325b26"
@@ -8255,7 +8263,7 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
-mimic-fn@^3.0.0:
+mimic-fn@^3.0.0, mimic-fn@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-3.1.0.tgz#65755145bbf3e36954b949c16450427451d5ca74"
   integrity sha512-Ysbi9uYW9hFyfrThdDEQuykN4Ey6BuwPD2kpI5ES/nFTDn/98yxYNLZJcgUAKPT/mcrLLKaGzJR9YVxJrIdASQ==
@@ -9175,14 +9183,10 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-php-parser@^3.0.0-prerelease.9:
+php-parser@3.0.2, php-parser@^3.0.0-prerelease.9:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/php-parser/-/php-parser-3.0.2.tgz#a86dbbc110e57378cba71ab4cd9b0d18f3872ac3"
   integrity sha512-a7y1+odEGsceLDLpu7oNyspZ0pK8FMWJOoim4/yd82AtnEZNLdCLZ67arnOQZ9K0lHJiSp4/7lVUpGELVxE14w==
-
-php-parser@glayzzle/php-parser#5a0e2e1bf12517bd1c544c0f4e68482d0362a7b5:
-  version "3.0.1"
-  resolved "https://codeload.github.com/glayzzle/php-parser/tar.gz/5a0e2e1bf12517bd1c544c0f4e68482d0362a7b5"
 
 picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.2.1:
   version "2.2.2"
@@ -10047,7 +10051,7 @@ prettier@^1.18.2:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
   integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
 
-prettier@^2.0.5, prettier@^2.1.2:
+prettier@^2.1.2, prettier@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
   integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
