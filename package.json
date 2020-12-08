@@ -29,7 +29,7 @@
     "@nuxtjs/pwa": "^3.0.2",
     "@nuxtjs/vercel-builder": "^0.18.1",
     "ansi_up": "^4.0.4",
-    "blade-formatter": "github:shufo/blade-formatter#fix/revert-vscode-oniguruma",
+    "blade-formatter": "^1.9.6",
     "body-parser": "^1.19.0",
     "core-js": "^3.6.5",
     "express": "^4.17.1",
