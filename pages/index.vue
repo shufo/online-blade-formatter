@@ -164,7 +164,7 @@ export default {
 
       if (body.error) {
         const ansi = new AnsiUp()
-        return (this.error = ansi.ansi_to_html(res.error))
+        return (this.error = ansi.ansi_to_html(body.error))
       }
 
       this.error = ''
