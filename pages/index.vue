@@ -71,7 +71,7 @@
               v-model="content"
               class="editor appearance-none block w-full py-3 px-4 leading-tight text-gray-700 bg-gray-50 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none"
               :highlight="highlighter"
-              @input="$fetch"
+              @input="format"
             ></prism-editor>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default {
   data() {
     return {
       formatted: '',
-      content: `@extends('frontend.layouts.app')
+      example: `@extends('frontend.layouts.app')
 @section('title') foo
 @endsection
 @section('content')
@@ -137,41 +137,38 @@ export default {
 </section>
 @endsection
 @section('footer')
-@stop
-      `,
+@stop`,
       error: '',
     }
   },
-  mounted() {
-    console.log(this.$colorMode)
-    console.log(this.$colorMode.value)
-    console.log(this.$colorMode.preference)
+  created() {
+    this.content = this.example
   },
-  async fetch() {
-    if (this.content === '') {
-      return
-    }
-
-    const res = await this.$http.post('/v1/format', {
-      content: this.content,
-    })
-
-    const body = await res.json()
-
-    if (body.error) {
-      const ansi = new AnsiUp()
-      return (this.error = ansi.ansi_to_html(body.error))
-    }
-
-    this.error = ''
-    this.formatted = body.formatted
+  mounted() {
+    this.format()
   },
   methods: {
-    refresh() {
-      this.$fetch()
-    },
     highlighter(code) {
       return highlight(code, languages.php) // languages.<insert language> to return html with markup
+    },
+    async format() {
+      if (this.content === '') {
+        return
+      }
+
+      const res = await this.$http.post('/v1/format', {
+        content: this.content,
+      })
+
+      const body = await res.json()
+
+      if (body.error) {
+        const ansi = new AnsiUp()
+        return (this.error = ansi.ansi_to_html(res.error))
+      }
+
+      this.error = ''
+      this.formatted = body.formatted
     },
   },
   watch: {},
