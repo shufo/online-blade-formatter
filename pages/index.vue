@@ -171,11 +171,8 @@ export default {
       this.formatted = body.formatted
     },
   },
-  watch: {},
   computed: {
     colorMode() {
-      // console.log(this.$colorMode.value)
-      // console.log(this.$colorMode.preference)
       if (this.$colorMode.value === 'system') {
         return 'dark'
       }
