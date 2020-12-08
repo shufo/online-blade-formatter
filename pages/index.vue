@@ -84,7 +84,9 @@
               :highlight="highlighter"
             />
           </div>
-          <pre v-html="error"></pre>
+          <div class="mb-6">
+            <pre v-html="error"></pre>
+          </div>
         </div>
       </div>
     </div>
