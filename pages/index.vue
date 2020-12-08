@@ -2,13 +2,11 @@
   <div class="container">
     <div class="container mx-auto px-4">
       <nav class="flex flex-wrap items-center justify-between p-4">
-        <div class="lg:order-1 w-auto lg:w-1/5">
-          <a class="text-xl font-semibold font-heading" href="#"
-            >Online Blade Formatter</a
-          >
+        <div class="lg:order-1 w-auto lg:w-2/5">
+          <h1 class="text-lg">Online Blade Formatter</h1>
         </div>
         <div
-          class="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5 lg:text-right"
+          class="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5 lg:text-right lg:h-auto"
         >
           <a
             href="https://github.com/shufo/online-blade-formatter"
@@ -22,7 +20,7 @@
           <!-- Toggle Button -->
           <label
             for="toogleA"
-            class="items-center cursor-pointer block lg:inline-block mt-4 lg:mt-0 mr-10"
+            class="items-center cursor-pointer block lg:inline-block mt-4 lg:mt-0 mr-10 h-3"
           >
             <!-- toggle -->
             <div class="relative">
