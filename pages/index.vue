@@ -79,7 +79,7 @@
           <div class="mb-6">
             <label class="block text-sm font-bold mb-2" for="">Formatted</label>
             <prism-editor
-              v-model="formatted"
+              v-model.lazy="formatted"
               class="editor appearance-none block w-full py-3 px-4 leading-tight text-gray-700 bg-gray-50 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none"
               :highlight="highlighter"
             />
