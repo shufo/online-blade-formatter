@@ -107,6 +107,7 @@ export default {
   data() {
     return {
       formatted: '',
+      content: '',
       example: `@extends('frontend.layouts.app')
 @section('title') foo
 @endsection
@@ -140,11 +141,11 @@ export default {
       error: '',
     }
   },
-  created() {
+  fetch() {
     this.content = this.example
   },
-  mounted() {
-    this.format()
+  async mounted() {
+    await this.format()
   },
   methods: {
     highlighter(code) {
