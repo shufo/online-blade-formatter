@@ -3161,9 +3161,10 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-"blade-formatter@github:shufo/blade-formatter#fix/revert-vscode-oniguruma":
-  version "1.9.5"
-  resolved "https://codeload.github.com/shufo/blade-formatter/tar.gz/9490a6707efd09e3d7c9cb33ab7386842ac7a222"
+blade-formatter@^1.9.6:
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.9.6.tgz#061a3f64d36f212ba73b7cc9a20fec70546f1eb8"
+  integrity sha512-cMHXBMO1MBJG0V2nIL6YuaVhfYu+GhZUvJ6FU6TyZDBqVKyJUzKo8oqUSOTowZagxbhGLpPorA/XWY1paSd1HA==
   dependencies:
     "@prettier/plugin-php" "^0.16.0"
     chalk "^4.1.0"
