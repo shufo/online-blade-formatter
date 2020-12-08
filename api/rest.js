@@ -7,10 +7,10 @@ app.use(bodyParser.json())
 app.all('/format', async (req, res) => {
   try {
     const formatter = new Formatter()
-    const formatted = await formatter.formatContent(req.body.content)
-    res.json({ formatted })
+    const formatted = await formatter.formatContent(req.body.data)
+    res.json({ data: formatted })
   } catch (error) {
-    res.json({ error: error.toString() })
+    res.status(400).send(error.toString())
   }
 })
 

@@ -156,19 +156,28 @@ export default {
         return
       }
 
-      const res = await this.$http.post('/v1/format', {
-        content: this.content,
-      })
+      try {
+        const res = await this.$http.post(
+          '/v1/format',
+          {
+            data: this.content,
+          },
+          {
+            retry: 2,
+            serverTimeout: 5000,
+          }
+        )
+        const body = await res.json()
 
-      const body = await res.json()
-
-      if (body.error) {
-        const ansi = new AnsiUp()
-        return (this.error = ansi.ansi_to_html(body.error))
+        this.error = ''
+        this.formatted = body.data
+      } catch (error) {
+        this.handleError(error)
       }
-
-      this.error = ''
-      this.formatted = body.formatted
+    },
+    handleError(err) {
+      const ansi = new AnsiUp()
+      this.error = ansi.ansi_to_html(err.response.data)
     },
   },
   computed: {
