@@ -69,7 +69,6 @@
               v-model="content"
               class="editor appearance-none block w-full py-3 px-4 leading-tight text-gray-700 bg-gray-50 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none"
               :highlight="highlighter"
-              @input="format"
             ></prism-editor>
           </div>
         </div>
@@ -79,6 +78,7 @@
             <prism-editor
               v-model.lazy="formatted"
               class="editor appearance-none block w-full py-3 px-4 leading-tight text-gray-700 bg-gray-50 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none"
+              :class="awaitingInput ? 'animate-pulse' : ''"
               :highlight="highlighter"
             />
           </div>
@@ -108,6 +108,7 @@ export default {
     return {
       formatted: '',
       content: '',
+      awaitingInput: false,
       example: `@extends('frontend.layouts.app')
 @section('title') foo
 @endsection
@@ -188,6 +189,17 @@ export default {
       }
 
       return this.$colorMode.preference
+    },
+  },
+  watch: {
+    content() {
+      if (!this.awaitingInput) {
+        setTimeout(() => {
+          this.format()
+          this.awaitingInput = false
+        }, 1000)
+      }
+      this.awaitingInput = true
     },
   },
 }
