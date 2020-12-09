@@ -7,7 +7,7 @@
 <script>
 export default {
   head: {
-    title: 'Blade Online Formatter',
+    title: 'Online Blade Formatter',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
