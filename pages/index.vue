@@ -141,10 +141,8 @@ export default {
       error: '',
     }
   },
-  fetch() {
-    this.content = this.example
-  },
   async mounted() {
+    this.content = this.example
     await this.format()
   },
   methods: {
