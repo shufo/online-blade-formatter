@@ -194,8 +194,8 @@ export default {
   watch: {
     content() {
       if (!this.awaitingInput) {
-        setTimeout(() => {
-          this.format()
+        setTimeout(async () => {
+          await this.format()
           this.awaitingInput = false
         }, 1000)
       }
