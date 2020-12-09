@@ -152,6 +152,7 @@ export default {
     },
     async format() {
       if (this.content === '') {
+        this.formatted = this.content
         return
       }
 
