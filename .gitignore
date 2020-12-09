@@ -90,3 +90,7 @@ sw.*
 *.swp
 
 .vercel
+
+node_modules_dev
+node_modules_prod
+/node_modules
