@@ -128,6 +128,7 @@ import AnsiUp from 'ansi_up'
 import GitHubIconLight from '@/assets/svg/github-icon-light.svg?inline'
 import GitHubIconDark from '@/assets/svg/github-icon-dark.svg?inline'
 export default {
+  cache: true,
   components: { PrismEditor, GitHubIconLight, GitHubIconDark },
   data() {
     return {
