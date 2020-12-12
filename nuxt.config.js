@@ -44,6 +44,7 @@ export default {
     '@nuxt/http',
     '@nuxtjs/axios',
     '@nuxtjs/svg',
+    '@pi0/nuxt-cache',
   ],
   http: {
     baseURL: process.env.BASE_URL || 'http://localhost:3000',
