@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/rest.ts",
+      "src": "api/rest.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/v1/format",
-      "dest": "/api/rest.ts",
+      "dest": "/api/rest.js",
       "methods": ["POST", "OPTIONS"],
       "headers": {
         "Access-Control-Allow-Methods": "POST",

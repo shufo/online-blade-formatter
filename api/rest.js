@@ -1,9 +1,8 @@
-import { NowRequest, NowResponse } from '@vercel/node'
 // eslint-disable-next-line no-global-assign
 require = require('esm')(module)
 const Formatter = require('blade-formatter/src/formatter')
 
-module.exports = async (req: NowRequest, res: NowResponse) => {
+module.exports = async (req, res) => {
   try {
     // eslint-disable-next-line new-cap
     const formatter = new Formatter.default()
