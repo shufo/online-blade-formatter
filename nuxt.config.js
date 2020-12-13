@@ -70,7 +70,6 @@ export default {
   purgeCSS: {
     whitelist: ['dark-mode'],
   },
-  serverMiddleware: [{ path: '/v1', handler: '~/api/rest' }],
   generate: {
     routes: ['/'],
   },
