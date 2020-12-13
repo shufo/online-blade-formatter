@@ -3,5 +3,7 @@
 @import 'tailwindcss/utilities';
 
 .dark-mode body {
-  @apply bg-gray-800 text-white;
+  @apply text-white;
+
+  background-color: #24292e;
 }
