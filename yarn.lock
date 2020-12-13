@@ -3165,10 +3165,9 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-blade-formatter@^1.9.6:
+"blade-formatter@git://github.com/shufo/blade-formatter#feature/use-plugin-parser":
   version "1.9.6"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.9.6.tgz#061a3f64d36f212ba73b7cc9a20fec70546f1eb8"
-  integrity sha512-cMHXBMO1MBJG0V2nIL6YuaVhfYu+GhZUvJ6FU6TyZDBqVKyJUzKo8oqUSOTowZagxbhGLpPorA/XWY1paSd1HA==
+  resolved "git://github.com/shufo/blade-formatter#4cf2bb4d4f0446e79304f6916c0b68499077f23f"
   dependencies:
     "@prettier/plugin-php" "^0.16.0"
     chalk "^4.1.0"
