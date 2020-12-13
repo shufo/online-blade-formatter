@@ -5,10 +5,14 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": ["api/**"],
+        "serverFiles": ["server-middleware/**"],
         "internalServer": false,
         "generateStaticRoutes": true
       }
+    },
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -29,6 +33,14 @@
       }
     },
     { "src": "/", "dest": "/index.html" },
+    {
+      "src": "/v1/formst",
+      "dest": "/api/rest.js",
+      "methods": ["POST", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Methods": "POST"
+      }
+    },
     { "src": "/(.*)", "dest": "/" }
   ]
 }
