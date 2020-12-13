@@ -15,7 +15,7 @@
     { "src": "/_nuxt/.+", "headers": { "Cache-Control": "max-age=31557600" } },
     {
       "src": "/sw.js",
-      "dest": "/_nuxt/sw.js",
+      "dest": "/sw.js",
       "headers": {
         "cache-control": "public, max-age=43200, immutable",
         "Service-Worker-Allowed": "/"
@@ -23,7 +23,7 @@
     },
     {
       "src": "/favicon.svg",
-      "dest": "/_nuxt/favicon.svg",
+      "dest": "/favicon.svg",
       "headers": {
         "cache-control": "public, max-age=43200, immutable"
       }
