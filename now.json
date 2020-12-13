@@ -28,6 +28,7 @@
         "cache-control": "public, max-age=43200, immutable"
       }
     },
+    { "src": "/", "dest": "/index.html" },
     { "src": "/(.*)", "dest": "/" }
   ]
 }
