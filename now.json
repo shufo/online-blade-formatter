@@ -1,5 +1,16 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": ["api/**"],
+        "internalServer": false,
+        "generateStaticRoutes": true
+      }
+    }
+  ],
   "routes": [
     { "src": "/_nuxt/.+", "headers": { "Cache-Control": "max-age=31557600" } },
     {
@@ -18,20 +29,6 @@
       }
     },
     { "src": "/", "dest": "/index.html" },
-    {
-      "src": "/v1/format",
-      "dest": "/api/rest.js",
-      "methods": ["POST", "OPTIONS"],
-      "headers": {
-        "Access-Control-Allow-Methods": "POST",
-        "Access-Control-Allow-Headers": "Content-Type"
-      }
-    },
     { "src": "/(.*)", "dest": "/" }
-  ],
-  "functions": {
-    "api/rest.js": {
-      "includeFiles": "node_modules/blade-formatter/**"
-    }
-  }
+  ]
 }

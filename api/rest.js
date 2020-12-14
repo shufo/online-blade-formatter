@@ -1,14 +1,18 @@
-// eslint-disable-next-line no-global-assign
-require = require('esm')(module)
-const Formatter = require('blade-formatter/src/formatter')
+import Formatter from 'blade-formatter/src/formatter'
 
-module.exports = async (req, res) => {
+const bodyParser = require('body-parser')
+const app = require('express')()
+
+app.use(bodyParser.json())
+app.all('/format', async (req, res) => {
   try {
-    // eslint-disable-next-line new-cap
-    const formatter = new Formatter.default()
+    const formatter = new Formatter()
     const formatted = await formatter.formatContent(req.body.data)
+    res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
     res.json({ data: formatted })
   } catch (error) {
     res.status(400).send(error.toString())
   }
-}
+})
+
+module.exports = app
