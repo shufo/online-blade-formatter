@@ -31,7 +31,7 @@
   ],
   "functions": {
     "api/rest.js": {
-      "includeFiles": ["node_modules/**/*"]
+      "includeFiles": "node_modules/**"
     }
   }
 }
