@@ -43,5 +43,10 @@
       }
     },
     { "src": "/(.*)", "dest": "/" }
-  ]
+  ],
+  "functions": {
+    "api/rest.js": {
+      "includeFiles": "node_modules/blade-formatter/**"
+    }
+  }
 }
