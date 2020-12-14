@@ -168,9 +168,8 @@ export default {
       error: '',
     }
   },
-  async mounted() {
+  mounted() {
     this.content = this.example
-    await this.format()
   },
   methods: {
     highlighter(code) {
