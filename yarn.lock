@@ -3169,10 +3169,10 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-blade-formatter@^1.9.9:
-  version "1.9.9"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.9.9.tgz#85836acb50a481bf6c03601c2b64a63feb1b135d"
-  integrity sha512-DE4CvvvtVE6FmJYk+WwMCZhMdocxYB9yBXtJH5LmEOEjdvcCtz4ysEoW5JAMHy0F5D9SMvGxzoaMYGZjRKwapA==
+blade-formatter@^1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.10.1.tgz#f18a02b9929ff17c109326713bf0440eccf63cda"
+  integrity sha512-c6Af1rGC7MjF7McFKStj09f897MEZTC5PvJrjv6t6kQRB5kaGAEca5p/WJfi8MaI7E+5TxIFeT4FTnceXk+Reg==
   dependencies:
     "@prettier/plugin-php" "^0.16.0"
     chalk "^4.1.0"
@@ -3180,6 +3180,7 @@ blade-formatter@^1.9.9:
     detect-indent "^6.0.0"
     esm "^3.2.25"
     glob "^7.1.4"
+    ignore "^5.1.8"
     js-beautify "^1.10.2"
     lodash "^4.17.19"
     php-parser "^3.0.0-prerelease.9"
