@@ -3169,10 +3169,10 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-blade-formatter@^1.10.1:
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.10.1.tgz#f18a02b9929ff17c109326713bf0440eccf63cda"
-  integrity sha512-c6Af1rGC7MjF7McFKStj09f897MEZTC5PvJrjv6t6kQRB5kaGAEca5p/WJfi8MaI7E+5TxIFeT4FTnceXk+Reg==
+blade-formatter@^1.10.3:
+  version "1.10.3"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.10.3.tgz#610e55b9f9fcff09bbafc482fd304975e6f627e8"
+  integrity sha512-+RzU0npN+7RixbpD8+LDJrj1be9B6t/pr8eY6ONYeKJj3PHZKr+x5TGE6Xqj6w3bltdccPgW/VdHJIGdhDmd6Q==
   dependencies:
     "@prettier/plugin-php" "^0.16.0"
     chalk "^4.1.0"
