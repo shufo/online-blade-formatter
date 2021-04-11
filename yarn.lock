@@ -3188,10 +3188,10 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-blade-formatter@^1.10.7:
-  version "1.10.7"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.10.7.tgz#a47454e6f4a5656c2146c13fc8df702c2d8631bb"
-  integrity sha512-QPd+iKV5BLa2Up7qIXrdWvG89uUdGzYQ0leW533Ax/cg8c8fLNo2wKBAdY1Zb5Nr/seCJAKfrl9lQjlwSTcCng==
+blade-formatter@^1.11.4:
+  version "1.11.4"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.11.4.tgz#089ab1899199a53ae1d79c390049b11aaa5468ce"
+  integrity sha512-Y6ncCuim7YJt2NDQnlKYZzpXwrE4sFjZEUcaHuRSSY5gyxI3SrtyMOlM6Oh7UFAmD7xptRLe5lHIC7el9hNbMA==
   dependencies:
     "@prettier/plugin-php" shufo/plugin-php#a18627e03748ee5dd0218b7685a6564672f6c3e7
     aigle "^1.14.1"
@@ -9277,6 +9277,10 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
+
+php-parser@glayzzle/php-parser#da4f3f5c9aa2ae6bfa6b001fa185488c20ad1702:
+  version "3.0.2"
+  resolved "https://codeload.github.com/glayzzle/php-parser/tar.gz/da4f3f5c9aa2ae6bfa6b001fa185488c20ad1702"
 
 php-parser@shufo/php-parser#0b7781fdf88be4b8974320cf27af1588c07e2da8:
   version "3.0.2"
