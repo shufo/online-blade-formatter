@@ -6,7 +6,7 @@ An online blade formatter based on [blade-formatter](https://github.com/shufo/bl
 
 ## Deploy
 
-You can deploy your own online blade formatter on [vercel](https://vercel.com/)
+You can deploy your own online blade formatter on [vercel](https://vercel.com/) by clicking button below.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fshufo%2Fonline-blade-formatter)
 
