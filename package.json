@@ -32,7 +32,7 @@
     "ansi_up": "^4.0.4",
     "blade-formatter": "^1.14.0",
     "body-parser": "^1.19.0",
-    "core-js": "^3.17.2",
+    "core-js": "^3.19.2",
     "express": "^4.17.1",
     "nuxt": "^2.14.6",
     "nuxt-svg-loader": "^1.2.0",
