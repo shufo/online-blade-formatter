@@ -1,4 +1,5 @@
-import Formatter from 'blade-formatter/src/formatter'
+import BladeFormatter from 'blade-formatter'
+const { Formatter } = BladeFormatter
 
 const bodyParser = require('body-parser')
 const app = require('express')()
