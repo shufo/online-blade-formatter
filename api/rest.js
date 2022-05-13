@@ -6,7 +6,7 @@ const app = require('express')()
 app.use(bodyParser.json())
 app.all('/format', async (req, res) => {
   try {
-    const formatter = new Formatter()
+    const formatter = new Formatter({ sortTailwindcssClasses: false })
     const formatted = await formatter.formatContent(req.body.data)
     res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
     res.json({ data: formatted })
