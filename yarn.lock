@@ -1746,14 +1746,14 @@
     etag "^1.8.1"
     hasha "^5.2.0"
 
-"@prettier/plugin-php@^0.18.0":
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.18.0.tgz#5dc7224aea5f58cb93d58882b51b6646dcfd81e5"
-  integrity sha512-os1CLqJFUSJpp3hkJ4IARW1h5ZuWhRdPnGaGaJs517uCL57V4C9dJeaSmIUi20qPji+mDhGs7SNZgdyW8VNcuw==
+"@prettier/plugin-php@^0.19.0":
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.19.1.tgz#23b4ca6bbd05f1dc607a5f90877cfc2354b5294c"
+  integrity sha512-faoQX6QF4JZ0xJT+FRkMU7JnUTqVFRSwz7oKYuKgjY6u8VHSURlRXVkP4UyXxsTPAGjVJpNh7JseKkpK1DZziw==
   dependencies:
-    linguist-languages "^7.5.1"
+    linguist-languages "^7.21.0"
     mem "^8.0.0"
-    php-parser "3.1.0-beta.0"
+    php-parser "^3.1.1"
 
 "@shufo/tailwindcss-class-sorter@^1.0.3":
   version "1.0.4"
@@ -3226,12 +3226,12 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-blade-formatter@^1.25.0:
-  version "1.25.0"
-  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.25.0.tgz#ccd040df89cbebad1f0346a93ad9a28f33d9e7e1"
-  integrity sha512-khL1kVj2mETMMR3sP5ivIyIcc3toycVeSzIiT/5igQUOmw51qNnYqHHJPgRj+MI7z7+r5LMK20IRGV39vrvFaw==
+blade-formatter@^1.28.0:
+  version "1.28.0"
+  resolved "https://registry.yarnpkg.com/blade-formatter/-/blade-formatter-1.28.0.tgz#b86ee18816acd59332b0d40e38233ad1e081e0b8"
+  integrity sha512-Y3Dr/pltJ+Tz8F0FX7HWJjz5RG/SekvB/E+STej2CwXuJ4f5odtvGJhfi7lAL8i3v9dDF2GkRp7G4o8rhegULw==
   dependencies:
-    "@prettier/plugin-php" "^0.18.0"
+    "@prettier/plugin-php" "^0.19.0"
     "@shufo/tailwindcss-class-sorter" "^1.0.3"
     aigle "^1.14.1"
     ajv "^8.9.0"
@@ -3240,10 +3240,11 @@ blade-formatter@^1.25.0:
     detect-indent "^6.0.0"
     find-config "^1.0.0"
     glob "^8.0.1"
+    html-attribute-sorter "^0.4.2"
     ignore "^5.1.8"
     js-beautify "^1.14.0"
     lodash "^4.17.19"
-    php-parser "3.0.3"
+    php-parser "3.1.0"
     prettier "^2.2.0"
     vscode-oniguruma "1.6.2"
     vscode-textmate "^7.0.1"
@@ -6497,6 +6498,11 @@ hsla-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/hsla-regex/-/hsla-regex-1.0.0.tgz#c1ce7a3168c8c6614033a4b5f7877f3b225f9c38"
   integrity sha1-wc56MWjIxmFAM6S194d/OyJfnDg=
 
+html-attribute-sorter@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/html-attribute-sorter/-/html-attribute-sorter-0.4.2.tgz#803dfb2fb7c749cbf92fe52e7d3e331990072539"
+  integrity sha512-WjAaUWPuqXxddyQ5M4vqDHG8tcO+ajTnz03GNwmTsTyGdg9dJqoswwHyniK5ygitgXxqBYIE4T88/edWkl7wMQ==
+
 html-comment-regex@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/html-comment-regex/-/html-comment-regex-1.1.2.tgz#97d4688aeb5c81886a364faa0cad1dda14d433a7"
@@ -7969,10 +7975,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-linguist-languages@^7.5.1:
-  version "7.13.0"
-  resolved "https://registry.yarnpkg.com/linguist-languages/-/linguist-languages-7.13.0.tgz#9f533f3753861755c7414d57211e0df48bf6c113"
-  integrity sha512-n1X6l+YYbEDtXE9tDr8nYZAgeuKw+qBFvYGzIGltw3Z3oJwS+4vyVtFG5UFa71kvmPWMS3RT/yB95RWzD7MrVQ==
+linguist-languages@^7.21.0:
+  version "7.21.0"
+  resolved "https://registry.yarnpkg.com/linguist-languages/-/linguist-languages-7.21.0.tgz#da0184f622367cb092f1f8ba435937a85534f675"
+  integrity sha512-KrWJJbFOvlDhjlt5OhUipVlXg+plUfRurICAyij1ZVxQcqPt/zeReb9KiUVdGUwwhS/2KS9h3TbyfYLA5MDlxQ==
 
 lint-staged@^10.4.0:
   version "10.5.3"
@@ -9444,15 +9450,15 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-php-parser@3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/php-parser/-/php-parser-3.0.3.tgz#287779ea8a273ec5cf926f28e5f38ffa4ad32d4a"
-  integrity sha512-WjbrtYrwmLY9hpoKoq1+mVqJhT0dEVDZRWSpNIw2MpTw3VM/K4C6e0WR4KlU6G/XROkV7tpH4NesV2dDiPxqaw==
+php-parser@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/php-parser/-/php-parser-3.1.0.tgz#5ca8e0bac9846e85233a26e3162fdfc4fb9a0a58"
+  integrity sha512-EwtoPSCqggAgTcPbV4YXsvUjYRQCZCxsQzxa7z8RX8rJ8bWAglMMi1tFNxdzwf5uNPFWFjHYhXA3REuWKzgMuw==
 
-php-parser@3.1.0-beta.0:
-  version "3.1.0-beta.0"
-  resolved "https://registry.yarnpkg.com/php-parser/-/php-parser-3.1.0-beta.0.tgz#e43cb58ca35022f00973daf9dc55170de1f64ebf"
-  integrity sha512-j4v15Zy6pvJKd1N3XR53AUTySr1YEiKer8OlIFvqZTdRwMMmWttPiOZ7oyP53/QHY4DDHUfAtK9ZMomKw0xFlw==
+php-parser@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/php-parser/-/php-parser-3.1.1.tgz#203905e9c7d69851306968334e39458268c99336"
+  integrity sha512-HUxWIWpJoGhnSVzM6nPI1O2RePd7eJKzJoL3VZr6/KUUdcHKBex2Cp7p6pWOV1WxgKI/oYgRPMywwLCP789OYA==
 
 picocolors@^1.0.0:
   version "1.0.0"
