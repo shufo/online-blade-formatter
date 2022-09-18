@@ -27,7 +27,7 @@
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/axios": "^5.12.3",
     "@nuxtjs/pwa": "^3.0.2",
-    "@nuxtjs/vercel-builder": "^0.18.1",
+    "@nuxtjs/vercel-builder": "^0.22.1",
     "@pi0/nuxt-cache": "^0.1.1",
     "ansi_up": "^4.0.4",
     "blade-formatter": "^1.28.0",
