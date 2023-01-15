@@ -1814,13 +1814,13 @@
     ts-loader "^8.0.3"
     typescript "~4.0"
 
-"@nuxt/typescript-runtime@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@nuxt/typescript-runtime/-/typescript-runtime-2.0.0.tgz#57b1f0aeabe49c7548fa412b7ffd46ae424afefa"
-  integrity sha512-jF//aTclzhdaExENtLbWFpBAGcg9Aj0V4rEWnNGTdWfqurMMdzC96U+oa8UJIMMZgTp9MW3vaqbKuzTq8btz/A==
+"@nuxt/typescript-runtime@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@nuxt/typescript-runtime/-/typescript-runtime-2.1.0.tgz#8838bc929519f44ac40d8d2331aeb095a05965a5"
+  integrity sha512-quzxXiWq+jGdnCedDIYuBiExrfIJL3VL9o4gJyq6QzthKLYSvLzB6w4RiH6UbLtnNJyDoO9ywyNSI2+RUJr/Ng==
   dependencies:
-    ts-node "^9.0.0"
-    typescript "~4.0"
+    ts-node "^9.1.1"
+    typescript "~4.2"
 
 "@nuxt/utils@2.15.8":
   version "2.15.8"
@@ -13559,10 +13559,10 @@ ts-loader@^8.0.3:
     micromatch "^4.0.0"
     semver "^6.0.0"
 
-ts-node@^9.0.0:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.1.0.tgz#95eae4c6d0f94f2545884078e1eb1b14d2155639"
-  integrity sha512-0yqcL4sgruCvM+w64LiAfNJo6+lHfCYc5Ajj4yiLNkJ9oZ2HWaa+Kso7htYOOxVQ7+csAjdUjffOe9PIqC4pMg==
+ts-node@^9.1.1:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.1.1.tgz#51a9a450a3e959401bda5f004a72d54b936d376d"
+  integrity sha512-hPlt7ZACERQGf03M253ytLY3dHbGNGrAq9qIHWUY9XHYl1z7wYngSr3OQ5xmui8o2AaxsONxIzjafLUiWBo1Fg==
   dependencies:
     arg "^4.1.0"
     create-require "^1.1.0"
@@ -13712,6 +13712,11 @@ typescript@~4.0:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.5.tgz#ae9dddfd1069f1cb5beb3ef3b2170dd7c1332389"
   integrity sha512-ywmr/VrTVCmNTJ6iV2LwIrfG1P+lv6luD8sUJs+2eI9NLGigaN+nUQc13iHqisq7bra9lnmUSYqbJvegraBOPQ==
+
+typescript@~4.2:
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
+  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
 
 ua-parser-js@^0.7.28:
   version "0.7.32"
