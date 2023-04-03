@@ -3114,10 +3114,10 @@ ansi-styles@^4.0.0, ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
-ansi_up@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/ansi_up/-/ansi_up-4.0.4.tgz#5b8c35f0b02e4476f3f18cf89c3bf48d15d054f6"
-  integrity sha512-vRxC8q6QY918MbehO869biJW4tiunJdjOhi5fpY6NLOliBQlZhOkKgABJKJqH+JZfb/WfjvjN1chLWI6tODerw==
+ansi_up@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/ansi_up/-/ansi_up-5.2.1.tgz#9437082c7ad4975c15ec57d30a6b55da295bee36"
+  integrity sha512-5bz5T/7FRmlxA37zDXhG6cAwlcZtfnmNLDJra66EEIT3kYlw5aPJdbkJEhm59D6kA4Wi5ict6u6IDYHJaQlH+g==
 
 anymatch@*, anymatch@^3.0.0:
   version "3.1.3"
