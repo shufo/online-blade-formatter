@@ -26,7 +26,7 @@
     }
   },
   "dependencies": {
-    "@nuxt/http": "^0.6.1",
+    "@nuxt/http": "^0.6.4",
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/axios": "^5.12.3",
     "@nuxtjs/pwa": "^3.0.2",
